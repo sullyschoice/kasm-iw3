@@ -1,17 +1,17 @@
 # Kasm iw3 
-iw3 graphics 2d to 3d video converter for Kasm Workspaces (https://kasmweb.com)
+iw3 (https://github.com/nagadomi/nunif?tab=readme-ov-file#iw3) graphics 2d to 3d video converter for Kasm Workspaces (https://kasmweb.com)
 
 Load this image into Kasm Workspaces by adding the Sully's Choice Kasm Workspace Registry: https://sullyschoice.github.io/kasm-registry/
 
 ## Manual Run
 
 ```bash
-sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password sccr.sullyschoice.net/sullyschoice/kasm-gravitymark:latest
+sudo docker run --rm -it --shm-size=512m -p 6901:6901 -e VNC_PW=password sccr.sullyschoice.net/sullyschoice/kasm-iw3:latest
 ```
 
 Access via your browser: `https://<your ip>:6901` username: `kasm` , password: `password`
 
 ## Build
 ```bash
-sudo docker build -t gravitymark:latest -f Dockerfile .
+sudo docker build -t iw3:latest -f Dockerfile .
 ```
