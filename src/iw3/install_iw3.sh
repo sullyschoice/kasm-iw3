@@ -22,6 +22,7 @@ cat >/opt/iw3/nunif/launcher.sh <<EOL
 #!/bin/bash
 cd /opt/iw3/nunif/
 source venv/bin/activate
+export LD_LIBRARY_PATH=/opt/iw3/nunif/venv/lib/python3.10/site-packages/nvidia/cudnn/lib/:/opt/iw3/nunif/venv/lib/python3.10/site-packages/nvidia/cuda_nvrtc/lib/:${LD_LIBRARY_PATH}
 python -m iw3.gui
 EOL
 
